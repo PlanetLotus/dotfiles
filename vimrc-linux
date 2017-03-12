@@ -15,8 +15,6 @@ set showcmd " show the command being typed
 set number " turn on line numbers
 set backspace=2 " make backspace work normal
 set noerrorbells " don't make noise
-"set list " we do want to show tabs, to ensure we get them out of my files
-"set listchars=tab:>- " show tabs and trailing whitespace
 set shortmess=atI " shortens messages to avoid 'press a key' prompt
 set ruler " always show current positions along the bottom
 set clipboard=unnamed " allow usage of system clipboard
@@ -57,7 +55,7 @@ set smartcase " if there are caps, go case-sensitive
 set completeopt=menu,longest,preview " improve the way autocomplete works
 set wildignorecase " tab complete with case insensitivity
 "set cursorline " show the current row
-set cursorcolumn " show the current column
+"set cursorcolumn " show the current column
 set pastetoggle=<f12> " pastetoggle (same indentation on pastes)
 set wrap " word wrap visually
 set linebreak " only wrap at a character in the breakat option
@@ -75,7 +73,4 @@ autocmd FileType cpp set omnifunc=cppcomplete#Complete|setlocal comments-=:// co
 autocmd FileType make setlocal noexpandtab
 " }
 
-" UR Housing Specific {
 autocmd BufWritePre * :%s/\s\+$//e  " remove trailing spaces
-autocmd BufWritePre *.py :! touch ~/django/wwu_housing/wsgi.py
-" }
