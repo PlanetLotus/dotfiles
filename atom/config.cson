@@ -1,0 +1,17 @@
+"*":
+  "bracket-matcher":
+    autocompleteBrackets: false
+  core:
+    audioBeep: false
+    disabledPackages: [
+      "spell-check"
+    ]
+    telemetryConsent: "limited"
+  editor:
+    fontSize: 15
+  "exception-reporting":
+    userId: "b6bdfaea-aaff-2068-3650-491ae5f1ebf1"
+  "vim-mode-plus":
+    useSmartcaseForSearch: true
+  welcome:
+    showOnStartup: false
